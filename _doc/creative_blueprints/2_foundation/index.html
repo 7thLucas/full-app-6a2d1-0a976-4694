@@ -1,0 +1,76 @@
+<style>
+.mode-landscape .sl-cols { flex-direction: row; }
+.mode-portrait .sl-cols { flex-direction: column; }
+.mode-landscape .sl-col { width: 50%; }
+.mode-portrait .sl-col { width: 100%; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="p-10 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Foundation</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Why this app exists</h2>
+    </div>
+
+    <!-- Two-zone split -->
+    <div class="sl-cols flex flex-1 min-h-0 gap-4">
+
+      <!-- Problem -->
+      <div class="sl-col rounded-2xl p-6 flex flex-col" style="background: #0f172a;">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-7 h-7 rounded-full bg-red-500 flex items-center justify-center text-white text-xs font-black flex-shrink-0">✕</span>
+          <span class="text-white font-bold text-sm uppercase tracking-wide">The Problem</span>
+        </div>
+        <ul class="space-y-3 flex-1">
+          <li class="flex gap-2 text-xs text-slate-300 leading-relaxed">
+            <span class="text-red-400 mt-0.5 flex-shrink-0">▸</span>
+            <span>Shoppers open 5–8 browser tabs to compare prices across Amazon, Flipkart, and others — every single time.</span>
+          </li>
+          <li class="flex gap-2 text-xs text-slate-300 leading-relaxed">
+            <span class="text-red-400 mt-0.5 flex-shrink-0">▸</span>
+            <span>Shipping costs are hidden until checkout — what looks cheaper often isn't once delivery is added.</span>
+          </li>
+          <li class="flex gap-2 text-xs text-slate-300 leading-relaxed">
+            <span class="text-red-400 mt-0.5 flex-shrink-0">▸</span>
+            <span>Coupon codes are scattered, expired, or missed — most shoppers never apply the best available discount.</span>
+          </li>
+          <li class="flex gap-2 text-xs text-slate-300 leading-relaxed">
+            <span class="text-red-400 mt-0.5 flex-shrink-0">▸</span>
+            <span>The result: decision fatigue, overspending, and wasted time on a task that should take seconds.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col rounded-2xl p-6 flex flex-col" style="background: #f0fdf4; border: 2px solid #bbf7d0;">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-7 h-7 rounded-full bg-green-500 flex items-center justify-center text-white text-xs font-black flex-shrink-0">✓</span>
+          <span class="text-green-800 font-bold text-sm uppercase tracking-wide">The Solution</span>
+        </div>
+        <ul class="space-y-3 flex-1">
+          <li class="flex gap-2 text-xs text-slate-700 leading-relaxed">
+            <span class="text-green-500 mt-0.5 flex-shrink-0">▸</span>
+            <span>One search surfaces every major retailer simultaneously — no tab-switching, no manual hunting.</span>
+          </li>
+          <li class="flex gap-2 text-xs text-slate-700 leading-relaxed">
+            <span class="text-green-500 mt-0.5 flex-shrink-0">▸</span>
+            <span>True landed price shown upfront per store: base price + delivery charge, visible before you tap Buy Now.</span>
+          </li>
+          <li class="flex gap-2 text-xs text-slate-700 leading-relaxed">
+            <span class="text-green-500 mt-0.5 flex-shrink-0">▸</span>
+            <span>Active coupons surfaced automatically with discount pre-calculated — the final saving is clear at a glance.</span>
+          </li>
+          <li class="flex gap-2 text-xs text-slate-700 leading-relaxed">
+            <span class="text-green-500 mt-0.5 flex-shrink-0">▸</span>
+            <span>One-tap "Buy Now" deep link sends users directly to the retailer product page, ready to checkout.</span>
+          </li>
+        </ul>
+        <div class="mt-4 p-3 rounded-xl text-center font-bold text-sm text-white" style="background: #16a34a;">
+          From search to best deal in under 10 seconds
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
