@@ -1,5 +1,8 @@
 # Product Overview
 
+## App Name
+**ThriftFam**
+
 ## What It Is
 A mobile e-commerce price comparison and deal finder app. Users search for any product and instantly see a ranked list of online stores (Amazon, Flipkart, and others) where it is available — each card showing the store's logo, true landed price (base price + shipping/delivery charge), active coupons with calculated discount values, and a prominent "Buy Now" deep link to complete the purchase in one tap.
 
