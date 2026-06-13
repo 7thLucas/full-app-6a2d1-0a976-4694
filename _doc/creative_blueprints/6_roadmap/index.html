@@ -1,0 +1,68 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(1, 1fr); }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="p-10 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between mb-6">
+      <div>
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Post-MVP Roadmap</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-1">What comes next for ThriftFam</h2>
+      </div>
+      <span class="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap">3 High-Value Features</span>
+    </div>
+
+    <!-- 3-column feature cards -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <!-- Price Drop Alerts -->
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: #0f172a;">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">01</span>
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Price Drop Alerts</span>
+        </div>
+        <p class="text-white font-bold text-base leading-snug">Track any product. Get notified the moment the price drops.</p>
+        <p class="text-slate-400 text-xs leading-relaxed flex-1">Set a personal target price threshold. The moment any tracked store's true landed price meets it, a push notification fires — with the winning store, new price, and a one-tap Buy Now deep link.</p>
+        <div class="flex flex-wrap gap-2 mt-auto pt-3 border-t border-slate-700">
+          <span class="bg-slate-700 text-slate-200 text-xs font-semibold px-2.5 py-1 rounded-full">Multi-product tracking</span>
+          <span class="bg-slate-700 text-slate-200 text-xs font-semibold px-2.5 py-1 rounded-full">Push notifications</span>
+          <span class="bg-slate-700 text-slate-200 text-xs font-semibold px-2.5 py-1 rounded-full">Threshold targeting</span>
+        </div>
+      </div>
+
+      <!-- Deal Feed & Flash Sales -->
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: #fff7ed; border: 2px solid #fed7aa;">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">02</span>
+          <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">Deal Feed & Flash Sales</span>
+        </div>
+        <p class="text-slate-900 font-bold text-base leading-snug">A living home feed of trending deals and time-limited flash sales.</p>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1">Real-time curated feed of hot picks by category, with countdown timers on flash sales. Filter by interest. Save any deal straight to the wishlist from the feed.</p>
+        <div class="flex flex-wrap gap-2 mt-auto pt-3 border-t border-orange-200">
+          <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-2.5 py-1 rounded-full">Real-time updates</span>
+          <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-2.5 py-1 rounded-full">Flash countdowns</span>
+          <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-2.5 py-1 rounded-full">Category filters</span>
+        </div>
+      </div>
+
+      <!-- Smart Wishlist with Price History -->
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: #f0fdf4; border: 2px solid #bbf7d0;">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-full">03</span>
+          <span class="text-xs font-bold text-green-700 uppercase tracking-wider">Smart Wishlist</span>
+        </div>
+        <p class="text-slate-900 font-bold text-base leading-snug">Save products. See price history. Know the best time to buy.</p>
+        <p class="text-slate-600 text-xs leading-relaxed flex-1">Each wishlisted item shows a price history chart — highs and lows across all tracked stores over time. Turn guesswork into data-backed purchase decisions.</p>
+        <div class="flex flex-wrap gap-2 mt-auto pt-3 border-t border-green-200">
+          <span class="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full">Price history chart</span>
+          <span class="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full">Cross-store lows</span>
+          <span class="bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full">Personal saves</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
