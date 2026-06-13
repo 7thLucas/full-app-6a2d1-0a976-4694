@@ -1,0 +1,47 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left { width: 55%; }
+.mode-landscape .sl-right { width: 45%; }
+.mode-portrait .sl-left { width: 100%; padding-bottom: 2rem; }
+.mode-portrait .sl-right { width: 100%; min-height: 220px; }
+.mode-portrait .sl-blend { background: linear-gradient(to bottom, white 0%, transparent 40%) !important; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: editorial content -->
+    <div class="sl-left flex flex-col justify-between p-10">
+      <div>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Price Comparison</span>
+          <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Deal Finder</span>
+        </div>
+        <h1 class="text-5xl font-black text-slate-900 leading-tight mb-5">
+          Every deal.<br/>Every store.<br/><span class="text-orange-500">One search.</span>
+        </h1>
+        <p class="text-base text-slate-500 leading-relaxed max-w-xs">
+          Compare true landed prices across Amazon, Flipkart and more — live coupons and shipping costs applied, all in one view.
+        </p>
+      </div>
+      <div class="flex items-center gap-3">
+        <data-attribution />
+        <span class="text-slate-300">·</span>
+        <span class="text-xs text-slate-400">Mobile · E-Commerce · Price Intelligence</span>
+      </div>
+    </div>
+
+    <!-- Right: visual anchor -->
+    <div class="sl-right relative overflow-hidden">
+      <div class="absolute inset-0" style="background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);"></div>
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Modern%20smartphone%20displaying%20a%20price%20comparison%20shopping%20app%20with%20Amazon%20and%20Flipkart%20store%20cards%2C%20green%20coupon%20savings%20badges%2C%20orange%20buy%20now%20buttons%2C%20clean%20minimal%20mobile%20UI%20against%20deep%20navy%20background"
+        class="absolute inset-0 w-full h-full object-cover opacity-75"
+        alt="App preview"
+      />
+      <!-- Blend from left edge into white left panel -->
+      <div class="sl-blend absolute inset-0" style="background: linear-gradient(to right, white 0%, transparent 30%);"></div>
+    </div>
+
+  </div>
+</section>
