@@ -4,7 +4,10 @@
 A mobile e-commerce price comparison and deal finder app. Users search for any product and instantly see a ranked list of online stores (Amazon, Flipkart, and others) where it is available — each card showing the store's logo, true landed price (base price + shipping/delivery charge), active coupons with calculated discount values, and a prominent "Buy Now" deep link to complete the purchase in one tap.
 
 ## Target Users
-Everyday online shoppers who want the best deal on any product without manually switching between multiple retailer apps or websites. The app removes the friction of tab-switching, coupon hunting, and hidden delivery-cost surprises at checkout.
+Value-conscious, tech-savvy digital shoppers who buy online frequently and are tired of wasting time and money on market inefficiencies. The app removes the friction of tab-switching, coupon hunting, and hidden delivery-cost surprises at checkout. Three core segments:
+- **Gen Z deal hunters** — budget-driven shoppers who refuse to overpay and will switch stores to save.
+- **Busy working professionals** — want to skip manual comparison and trust one screen to surface the best deal instantly.
+- **Niche hobbyists** — gamers, sneakerheads, and collectors tracking volatile price drops on high-value items.
 
 ## Core Screens
 
