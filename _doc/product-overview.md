@@ -46,3 +46,14 @@ Utility-first, trustworthy, fast. Clean and information-dense without being clut
 
 ## Scope (MVP)
 Three screens: Home (search + trending categories), Results (store comparison cards), and Onboarding (location + push notification permissions). No user accounts, no payment processing, no inventory management — the app is a discovery and routing layer over existing retailer platforms.
+
+## Post-MVP Roadmap
+
+### Feature 1: Price Drop Alerts
+Users can set a target price threshold on any product and receive a push notification the moment any tracked store's true landed price falls at or below that threshold. Supports tracking multiple products simultaneously. Alerts surface the winning store, the new price, and a one-tap deep link to buy immediately.
+
+### Feature 2: Deal Feed & Flash Sales
+A curated, real-time home feed of trending deals, limited-time flash sales, and category-specific hot picks. Feed updates continuously and surfaces time-remaining countdowns for flash sales. Users can filter the feed by category and save deals directly to their wishlist.
+
+### Feature 3: Smart Wishlist with Price History
+Users can save any product to a personal wishlist. Each wishlisted item displays a price history chart showing price highs and lows across all tracked stores over time, enabling shoppers to make informed decisions about the best time to buy.
