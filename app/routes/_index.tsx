@@ -1,20 +1,33 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router";
+import { useConfigurables } from "~/modules/configurables";
+
 export default function IndexPage() {
+  const navigate = useNavigate();
+  const { config, loading } = useConfigurables();
+
+  useEffect(() => {
+    if (loading) return;
+    // Check if user has completed onboarding
+    const onboardingDone =
+      typeof window !== "undefined" &&
+      localStorage.getItem("dealradar_onboarding_done") === "true";
+
+    if (config?.showOnboarding !== false && !onboardingDone) {
+      navigate("/onboarding");
+    } else {
+      navigate("/home");
+    }
+  }, [loading, config?.showOnboarding, navigate]);
+
+  // Show a minimal splash while deciding route
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-white text-black font-sans text-center">
-      <div className="max-w-2xl space-y-6">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
-          Welcome to QuantumByte app
-        </h1>
-
-        <p className="text-base sm:text-lg md:text-xl text-stone-700 leading-relaxed">
-          If you seeing this view that mean you are seeing QuantumByte template base app.
-        </p>
-
-        <div className="pt-4">
-          <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black border border-black px-6 py-4 inline-block">
-            Ask the agent to build your idea now!!!
-          </p>
+    <div className="min-h-screen flex items-center justify-center bg-[#1A1A2E]">
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-[#FF4D00] flex items-center justify-center shadow-lg shadow-orange-500/30">
+          <span className="text-3xl">📡</span>
         </div>
+        <p className="text-white/60 text-sm font-medium tracking-wide">Loading DealRadar…</p>
       </div>
     </div>
   );

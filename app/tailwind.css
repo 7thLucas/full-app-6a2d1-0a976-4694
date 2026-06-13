@@ -176,11 +176,27 @@
 }
 
 body {
-  background: #f2f2f7;
+  background: #F5F5F5;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* Hide scrollbar for native mobile feel */
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* Safe area padding for bottom nav */
+.pb-safe {
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+}
+
+/* DealRadar primary overrides */
+:root {
+  --primary: #FF4D00;
+  --secondary: #1A1A2E;
+  --accent: #00E5FF;
+  --ring: #FF4D00;
 }
