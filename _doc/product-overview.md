@@ -51,7 +51,7 @@ Utility-first, trustworthy, fast. Clean and information-dense without being clut
 4. **Zero-effort comparison** — the user should never need to open a second app to validate a deal
 
 ## Scope (MVP)
-Three screens: Home (search + trending categories), Results (store comparison cards), and Onboarding (location + push notification permissions). No user accounts, no payment processing, no inventory management — the app is a discovery and routing layer over existing retailer platforms.
+Four surfaces: Onboarding (3-step: notification permission → camera permission → benefits slide), Home (text search + photo/camera search + trending categories), Results (per-retailer cards with product photo, name, delivery timer, fee, base cost, total cost, coupons, Buy Now deep link, and Save to Wishlist), and Wishlist (locally stored saved deals with Buy Now links). No user accounts, no payment processing, no inventory management — the app is a discovery and routing layer over existing retailer platforms.
 
 ## Post-MVP Roadmap
 
