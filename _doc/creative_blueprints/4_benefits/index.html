@@ -1,0 +1,48 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(1, 1fr); }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="p-10 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Benefits</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">What shoppers actually gain</h2>
+    </div>
+
+    <!-- 2 × 2 metric grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="background: #fff7ed;">
+        <span class="text-xs font-bold text-orange-600 uppercase tracking-wider block mb-2">Time Saved</span>
+        <span class="text-4xl font-black text-slate-900">~15 min</span>
+        <p class="text-xs text-slate-500 mt-2 leading-relaxed">per shopping session — manual tab-switching and coupon hunting eliminated in a single search.</p>
+      </div>
+
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="background: #f0fdf4;">
+        <span class="text-xs font-bold text-green-600 uppercase tracking-wider block mb-2">Savings Visibility</span>
+        <span class="text-4xl font-black text-slate-900">100%</span>
+        <p class="text-xs text-slate-500 mt-2 leading-relaxed">of active coupons shown with pre-calculated discount — the final price is never a surprise before checkout.</p>
+      </div>
+
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="background: #eff6ff;">
+        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-2">Price Transparency</span>
+        <span class="text-4xl font-black text-slate-900">Zero</span>
+        <p class="text-xs text-slate-500 mt-2 leading-relaxed">checkout surprises — shipping and delivery costs are surfaced before the user ever taps Buy Now.</p>
+      </div>
+
+      <!-- ROI summary card -->
+      <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: #0f172a;">
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Revenue Model</span>
+        <p class="text-slate-300 text-xs leading-relaxed flex-1">Affiliate deep links create a direct revenue stream per click-through. Better deals surfaced = higher conversion rate = higher commission earned.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">Affiliate Revenue</span>
+          <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">High-Intent Traffic</span>
+          <span class="bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full">Zero Inventory Cost</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
