@@ -16,21 +16,27 @@ Value-conscious, tech-savvy digital shoppers who buy online frequently and are t
 
 ### 1. Home Screen
 - Prominent search bar at the top — the primary entry point for the entire experience
+- Camera/photo icon beside the search bar: tap to snap a photo or pick from gallery and search by image
 - Grid of popular/trending product categories below for discovery without a specific search query
 
 ### 2. Results Screen
 - Searched product displayed at the top for context
-- Vertical list of store cards, one per retailer (e.g. Amazon, Flipkart)
-- Each store card contains:
-  - Store logo (brand recognition)
-  - Total price with a visible shipping/delivery charge layer
-  - List of active coupons with calculated discount values
-  - Prominent "Buy Now" button acting as a deep link to the product page on that retailer
+- Vertical list of result cards, one per retailer (e.g. Amazon, Flipkart)
+- Each result card contains:
+  - Product photo
+  - Product name
+  - Estimated delivery timer
+  - Delivery fee (shown as a separate line)
+  - Base product cost
+  - Total cost (base + delivery − coupons applied)
+  - Active coupons with calculated discount values
+  - **"Buy Now"** button — deep link to the product page on that retailer
+  - **"Save to Wishlist"** button — bookmarks the deal locally for later
 
-### 3. Onboarding Screen
-- Clean permission-request screen presented on first launch
-- Requests location access — for localised pricing and delivery estimates
-- Requests push notification access — for deal alerts and price-drop notifications
+### 3. Onboarding Flow (3 steps, first launch only)
+1. **Notification permission screen** — value prop headline + native OS push notification prompt
+2. **Camera permission screen** — explains photo search benefit + native OS camera/photo library prompt
+3. **Benefits slide** — single screen showing ThriftFam's three core benefits with a "Get Started" CTA that leads directly to the Home screen; never shown again after first launch
 
 ## Positioning
 The app sits at the intersection of price intelligence and coupon discovery for mobile-first shoppers. Its core value proposition is showing the true landed cost (product + shipping − applied coupons) across all major retailers in a single view, eliminating guesswork and tab-switching from the deal-hunting process.
