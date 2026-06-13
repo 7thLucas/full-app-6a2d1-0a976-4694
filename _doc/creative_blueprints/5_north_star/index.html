@@ -1,0 +1,88 @@
+<style>
+.mode-landscape .sl-body { flex-direction: row; gap: 1rem; }
+.mode-portrait .sl-body { flex-direction: column; gap: 1rem; }
+.mode-landscape .sl-left { width: 50%; }
+.mode-landscape .sl-right { width: 50%; }
+.mode-portrait .sl-left { width: 100%; }
+.mode-portrait .sl-right { width: 100%; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="p-10 h-full flex flex-col">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between mb-5">
+      <div>
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">North Star</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-1">The number this app lives by</h2>
+      </div>
+      <span class="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap">Projected — based on your inputs</span>
+    </div>
+
+    <!-- Body: 2 columns -->
+    <div class="sl-body flex flex-1 min-h-0">
+
+      <!-- Left: Operation definition + WVO formula -->
+      <div class="sl-left flex flex-col gap-3">
+
+        <div class="rounded-2xl p-5 flex flex-col flex-1" style="background: #0f172a;">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-2">Verified Operation</span>
+          <p class="text-white font-bold text-sm">Price Comparison Search Completed</p>
+          <p class="text-slate-400 text-xs mt-2 leading-relaxed flex-1">A user searches for a product and views store results with live price, shipping, and coupon data. Clicks, logins, and page loads are <em>not</em> operations.</p>
+        </div>
+
+        <div class="rounded-2xl p-5" style="background: #f8fafc; border: 2px solid #e2e8f0;">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-3">Weekly Verified Operations (WVO)</span>
+          <div class="flex flex-wrap items-center gap-2 text-xs mb-2">
+            <span class="bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-semibold">500 DAU ✱</span>
+            <span class="text-slate-400 font-bold">×</span>
+            <span class="bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-semibold">2 searches/day ✱</span>
+            <span class="text-slate-400 font-bold">×</span>
+            <span class="text-slate-700 font-semibold">7 days</span>
+            <span class="text-slate-400 font-bold">=</span>
+            <span class="text-2xl font-black text-indigo-600">7,000 / wk</span>
+          </div>
+          <p class="text-xs text-amber-600">✱ Assumption — adjust this</p>
+        </div>
+
+      </div>
+
+      <!-- Right: Value derivation -->
+      <div class="sl-right rounded-2xl p-5 flex flex-col" style="background: #f0fdf4; border: 2px solid #bbf7d0;">
+        <span class="text-xs font-bold text-green-700 uppercase tracking-wider block mb-4">Value Derivation</span>
+
+        <div class="flex flex-col gap-3 flex-1">
+
+          <!-- Per-op value row -->
+          <div class="p-3 bg-white rounded-xl text-xs">
+            <span class="text-slate-500 block mb-1">Value per operation</span>
+            <div class="flex flex-wrap items-center gap-1">
+              <span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-semibold">15 min saved ✱</span>
+              <span class="text-slate-400">×</span>
+              <span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded font-semibold">₹300 / hr ✱</span>
+              <span class="text-slate-400">=</span>
+              <span class="font-bold text-green-700">₹75 / op</span>
+            </div>
+          </div>
+
+          <!-- Weekly + annual totals -->
+          <div class="grid grid-cols-2 gap-3 flex-1">
+            <div class="p-4 bg-white rounded-xl flex flex-col justify-center">
+              <span class="text-xs text-slate-400">Weekly value</span>
+              <span class="text-2xl font-black text-slate-900">₹5.25L</span>
+              <span class="text-xs text-slate-400">7,000 × ₹75</span>
+            </div>
+            <div class="p-4 rounded-xl flex flex-col justify-center" style="background: #16a34a;">
+              <span class="text-xs text-green-100">Annual value</span>
+              <span class="text-2xl font-black text-white">₹2.73Cr</span>
+              <span class="text-xs text-green-200">₹5.25L × 52 wks</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="text-xs text-amber-600 mt-2">✱ Assumptions — adjust these to your targets</p>
+      </div>
+
+    </div>
+  </div>
+</section>
